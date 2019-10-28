@@ -9,9 +9,10 @@ function init() {
 
 // Start 
 function start(nodes) {
-	let sec = -90,
-		min = -90,
-		hrs = -90;
+
+	let sec = -90 + getSeconds(),
+		min = -90 + getMinutes(),
+		hrs = -90 + getHours();
 
 	setInterval(function() {
 
@@ -75,6 +76,22 @@ function createElements(parent) {
 	sec.id = 'seconds';
 
 	return { hrs, min, sec }
+}
+
+// Get current time seconds
+function getSeconds() {
+	return new Date().getSeconds() * 6;
+}
+
+
+// Get current time minutes
+function getMinutes() {
+	return new Date().getMinutes() * 6;
+}
+
+// Get current time hours
+function getHours() {
+	return new Date().getHours() * 12;
 }
 
 // Start
