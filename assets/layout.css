@@ -1,0 +1,39 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#alarm {
+	width: 225px;
+	height: 225px;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-image: url(watch.png);
+}
+
+#alarm div {
+	top: 49.9%;
+	left: 49.9%;
+	position: absolute;
+	transform: rotate(-90deg);
+	transform-origin: left center;
+}
+
+#alarm #seconds {
+	width: 36%;
+	padding: 1px;
+	background-color: red;
+}
+
+#alarm #minutes {
+	width: 33%;
+	padding: 1px;
+	background-color: #444;
+}
+
+#alarm #hours {
+	width: 24%;
+	padding: 2px;
+	background-color: #111;
+}
