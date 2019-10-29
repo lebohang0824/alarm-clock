@@ -14,6 +14,8 @@ function start(nodes) {
 		min = -90 + getMinutes(),
 		hrs = -90 + getHours();
 
+		console.log(getHours())
+
 	setInterval(function() {
 
 		/*
@@ -91,7 +93,7 @@ function getMinutes() {
 
 // Get current time hours
 function getHours() {
-	return new Date().getHours() * 12;
+	return new Date().getHours() * 30 + (30 * 0.5);
 }
 
 // Start
