@@ -93,7 +93,11 @@ function getMinutes() {
 
 // Get current time hours
 function getHours() {
-	return new Date().getHours() * 30 + (30 * 0.5);
+	if (new Date().getHours() > 12) {
+		return new Date().getHours() * 6 + (6 * 0.5);
+	} else {
+		return new Date().getHours() * 30 + (6 * 0.5);
+	}
 }
 
 // Start
