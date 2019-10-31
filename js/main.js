@@ -96,7 +96,7 @@ function getHours() {
 	if (new Date().getHours() > 12) {
 		return new Date().getHours() * 6 + (6 * 0.5);
 	} else {
-		return new Date().getHours() * 30 + (6 * 0.5);
+		return new Date().getHours() * 30 + (20 * 0.5);
 	}
 }
 
